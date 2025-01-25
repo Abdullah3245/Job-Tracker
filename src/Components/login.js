@@ -61,6 +61,7 @@ function Login() {
 
     return (
         <div id="login-container">
+            <title>Log in</title>
             <div className="login-card">
                 <h1>Welcome Back</h1>
                 <p className="subtitle">Log in to your JobTracker account</p>

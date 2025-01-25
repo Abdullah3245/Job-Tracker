@@ -78,6 +78,7 @@ function SignUp() {
 
     return (
         <div id="signup-container">
+             <title>Sign up</title>
             <div className="signup-card">
                 <h1>Create Account</h1>
                 <p className="subtitle">Join JobTracker and start managing your job applications</p>

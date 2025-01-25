@@ -57,6 +57,7 @@ export default function Main() {
 
   return (
     <div id="main-container">
+       <title>Main</title>
       <nav>
         <p onClick={() => navigate("/")}>Job Tracker</p>
         <div className="nav-buttons">
