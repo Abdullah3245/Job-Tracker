@@ -1,7 +1,7 @@
 {
   "name": "job-tracker",
   "version": "0.1.0",
-  "homepage": "https://github.com/Abdullah3245/Job-Tracker",
+"homepage": "https://abdullah3245.github.io/Job-Tracker",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
