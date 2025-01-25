@@ -1,0 +1,129 @@
+/* Overlay for the popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto; /* Prevents overflow issues */
+    margin: 5%;
+}
+
+/* Inner popup container */
+ .popup .popup-inner {
+    position: relative;
+    background-color: #ffffff;
+    color: black;
+    padding: 40px 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    margin-bottom:5% ;
+}
+
+/* Popup Title */
+.popup .popup-inner h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #222;
+    font-weight: bold;
+}
+
+/* Form Labels */
+.popup-inner label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.popup .popup-inner input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f9f9ff;
+    color: #000; /* Explicitly set text color */
+}
+
+.popup .popup-inner input::placeholder {
+    color: #888; /* Explicitly set placeholder color */
+}
+
+.popup .popup-inner input:focus {
+    border-color: #4d4ae8;
+    box-shadow: 0 0 8px rgba(77, 74, 232, 0.4);
+}
+
+
+.popup .popup-inner input:focus {
+    border-color: #4d4ae8;
+    box-shadow: 0 0 8px rgba(77, 74, 232, 0.4);
+}
+
+/* Popup Buttons */
+.popup .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.popup .popup-buttons button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background: #4d4ae8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.popup .popup-buttons button:hover {
+    background: #3733e5;
+}
+
+.popup .popup-buttons button.cancel {
+    background: #bbb;
+    color: white;
+}
+
+.popup .popup-buttons button.cancel:hover {
+    background: #999;
+}
+
+/* Adjust layout for mobile */
+@media (max-width: 600px) {
+    .popup-inner {
+        padding: 20px;
+    }
+
+    .popup-inner h2 {
+        font-size: 1.5rem;
+    }
+
+    .popup-buttons button {
+        padding: 10px;
+    }
+}

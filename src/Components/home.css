@@ -1,0 +1,130 @@
+/* General Container Styling */
+#home-container {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Welcome Header */
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Typing Animation */
+.typed {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #f1e1fc;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ffffff;
+    animation: typing 3s steps(30, end), blink 0.6s step-end infinite;
+}
+
+/* Typing Effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Blinking Cursor */
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #ffffff; }
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Buttons Styling */
+/* Buttons Styling */
+.btn {
+    width: 200px; /* Set a fixed width for uniformity */
+    height: 50px; /* Set a fixed height for uniformity */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4D4AE8, #3733E5);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #FF4C4C, #E53A3A); /* Red gradient for Sign Up button */
+    border: 2px solid #FF4C4C;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #413FC5, #3733E5);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #E53A3A, #C23232);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .typed {
+        font-size: 1.75rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+}
+
